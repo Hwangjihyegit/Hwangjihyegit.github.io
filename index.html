@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="개인 포트폴리오 웹사이트">
+    <title>JiheyHwang 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 스타일시트 연결 -->
+<style>
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #001f3d; /* 시니컬한 네이비 색상 */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* 마우스를 가져다 댔을 때 색상 변경 */
+}
+
+.title-section {
+    margin-top: 10px;
+}
+
+.title-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title-section p {
+    font-size: 1.2rem;
+    color: #ffd700; /* 작은 제목 색상 */
+}
+
+.hero {
+    background-color: #001f3d;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 45%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #001f3d; /* 시니컬한 네이비 색상 */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ffcc00;
+}
+
+footer {
+    background-color: #001f3d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#portfolio">포트폴리오</a></li>
+                <li><a href="#contact">연락처</a></li>
+                <li><a href="#resume">이력서</a></li>
+            </ul>
+        </nav>
+        <div class="title-section">
+            <h1>JiheyHwang</h1>
+            <p>소프트웨어공학과 1학년 YC반</p>
+        </div>
+    </header>
+
+    <!-- 홈 영역 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>안녕하세요, 저는 황지혜(Jihye Hwang)입니다.</h1>
+            <p>동양미래대학교 컴퓨터소프트웨어공학과 1학년 재학 중</p>
+        </div>
+    </section>
+
+    <!-- 소개 영역 -->
+    <section id="about">
+        <div class="container">
+            <h2>소개</h2>
+            <p>저는 황지혜(Jihye Hwang)이며, 현재 동양미래대학교 컴퓨터소프트웨어공학과 1학년에 재학 중입니다. 기술과 소프트웨어 개발에 대한 깊은 관심을 가지고 있으며, 다양한 프로젝트를 통해 실력을 쌓고 있습니다.</p>
+        </div>
+    </section>
+
+    <!-- 포트폴리오 영역 -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>포트폴리오</h2>
+            <div class="portfolio-items">
+                <!-- 프로젝트 1 -->
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="카페 웹홈페이지 프로젝트">
+                    <h3>카페 웹홈페이지 제작</h3>
+                    <p>기술 스택: HTML, CSS, JavaScript, React.js</p>
+                    <p>프로젝트 설명: 현재 카페 웹홈페이지를 제작 중이며, 사용자 편의를 고려한 UI/UX 디자인 및 기능 구현을 목표로 하고 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 연락처 영역 -->
+    <section id="contact">
+        <div class="container">
+            <h2>연락처</h2>
+            <p>이메일: <a href="mailto:jihye.hwang@example.com">jihye.hwang@example.com</a></p>
+            <p>전화: 010-0000-0000</p>
+            <form action="submit_form.php" method="POST">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="message">메시지</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">보내기</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 이력서 다운로드 -->
+    <section id="resume">
+        <div class="container">
+            <h2>이력서</h2>
+            <p><a href="resume.pdf" download>이력서 다운로드</a></p>
+        </div>
+    </section>
+
+    <!-- 푸터 영역 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 JiheyHwang. All rights reserved.</p>
+            <ul>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://github.com">GitHub</a></li>
+                <li><a href="https://www.behance.net">Behance</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- 스크립트 연결 -->
+</body>
+</html>
